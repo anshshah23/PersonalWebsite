@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@300&family=Rubik+Glitch&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;   
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(5, 9, 69);
+  align-items: center;
+}
+
+/* navbar */
+
+.container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 0 15px;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  width: 50vw;
+  align-items: center;
+  padding: 15px;
+  margin-left: -50px;
+  font-style: bold;
+  font-weight: bolder;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: rgb(255, 241, 206);
+  font-size: 1.4em;
+  transition: 200ms;
+  padding: 2px 20px;
+  transition: 200ms;
+}
+
+.navbar li a:hover {
+  background-color: rgb(147, 215, 254);
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+  border: none;
+  color: rgb(5, 9, 69);
+}
+
+/* parallax1 */
+
+.homenav {
+  position: center;
+}
+    
+.bg img {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -50;
+}
+/* #bgpar
+{
+    filter: blur(5px);
+} */
+
+.vehicles img {
+  position: absolute;
+  width: 5vw;
+  transform: translate(68vw, 30vh);
+  display: none;
+  z-index: 50;
+}
+
+.about {
+  position: absolute;
+  top: 80vh;
+  width: 100vw;
+  height: 80vh;
+  background: linear-gradient(black, purple, transparent);
+  color: aliceblue;
+  padding: 100px;
+  z-index: -40;
+  font-size: 2em;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+/* glitch effect */
+.glitch {
+  letter-spacing: 3px;
+  cursor: pointer;
+  position: absolute;
+  color: azure;
+  font-size: 2.5em;
+  font-family:'Pacifico', 'Arial Narrow' monospace;
+}
+.glitch::before,
+.glitch::after {
+  content: "Ansh Shah!";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.glitch::before {
+  animation: glitch 3s linear infinite;
+  color: #e91e6292;
+  z-index: 0;
+}
+.glitch::after {
+  animation: glitch 3s linear infinite reverse;
+  color: #00c8ff70;
+  z-index: 0;
+}
+
+@keyframes glitch {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: -5px;
+    left: -5px;
+  }
+  40% {
+    top: 5px;
+    left: 5px;
+  }
+  60% {
+    top: -5px;
+    left: 5px;
+  }
+  80% {
+    top: 5px;
+    left: -5px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+#hometitle {
+  width: 15vw;
+  transform: translate(32vw, 20vh);
+  filter: blur(1px);
+}
+
+.btntop {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  font-size: 1em;
+  top: 150px;
+  padding: 4px 10px;
+  box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan;
+  background-color: cyan;
+}
+
+.btntop a {
+  text-decoration: none;
+  color: black;
+}
