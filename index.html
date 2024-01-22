@@ -11,12 +11,12 @@
       <div class="navbar" id="nav">
         <div class="container">
           <div id="hometitle">
-            <h2 class="glitch">Ansh  Shah</h2>
+            <h6 class="glitch">Ansh Shah</h6>
           </div>
           <ul>
-            <li id="home"><a href="">Home</a></li>
-            <li id="home"><a href="">Profile</a></li>
-            <li id="home"><a href="">Skills</a></li>
+            <li id="home"><a href="#nav">Home</a></li>
+            <li id="home"><a href="#profile">Profile</a></li>
+            <li id="home"><a href="#skill">Skills</a></li>
             <li id="home"><a href="">Projects</a></li>
             <li id="home"><a href="contactform.html">Contact</a></li>
           </ul>
@@ -24,31 +24,142 @@
       </div>
     </div>
 
-    <section>
+    <section class="profile" id="profile">
       <div class="container-anim">
-        <div class="photo" style="border: 3%; padding-top: 5%;">
+        <div class="photo" style="border: 3%; padding-top: 5%">
           <img src="profile.png" alt="Your Photo" />
         </div>
         <div class="typing-container">
-          <p id="text" style="font-size: 120%; padding-top: 20%;">
+          <p id="text" style="font-size: 120%; padding-top: 20%">
             Welcome to my world of frontend web development!
           </p>
-          <p style="font-size: 120%; padding: 2%;">
-            I'm Ansh Shah, a dedicated developer passionate 
-            <br />about blending creativity with functionality. From 
-            <br />responsive layouts to engaging user interfaces, 
-            <br />each project reflects my commitment to delivering 
-            <br />captivating digital experiences.
+          <p style="font-size: 120%; padding: 2%">
+            I'm Ansh Shah, a dedicated developer passionate
+            <br />about blending creativity with functionality. From
+            <br />responsive layouts to engaging user interfaces, <br />each
+            project reflects my commitment to delivering <br />captivating
+            digital experiences.
             <br />
             <br />Join me in crafting websites that not only meet
             <br />functional needs but also leave a lasting impression.
-            <br />Let's build a web presence that tells a compelling
-            <br />story with every click and scroll.
+            <br />Let's build a web presence that tells a compelling <br />story
+            with every click and scroll.
           </p>
           <span id="cursor"></span>
         </div>
       </div>
       <script src="script.js"></script>
+    </section>
+
+    <section id="skill">
+      <div class="skill-inner">
+        <div class="skill-header">
+          <h1>My Skills</h1>
+        </div>
+        <h2>Utilities and Languages</h2>
+        
+        <div class="row">
+          <div class="skill-container">
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="skill-img">
+                  <img src="logos/html5.png" class="skill-icon" />
+                </div>
+                <h3>HTML 5</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-container">
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="skill-img">
+                  <img src="logos/css.png" class="skill-icon" alt="" />
+                </div>
+                <h3>CSS</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-container">
+            <div class="skill-box">
+              <div class="skill-title">
+                <div class="skill-img">
+                  <img src="logos/java.svg" class="skill-icon" alt="" />
+                </div>
+                <h3>Java</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="skill-img">
+                <img src="logos/mysql.png" class="skill-icon" alt="" />
+              </div>
+              <h3>MySQL</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="skill-img">
+                <img src="logos/c.png" class="skill-icon" alt="" />
+              </div>
+              <h3>C</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="skill-img">
+                <img src="logos/c++.png" class="skill-icon" alt="" />
+              </div>
+              <h3>C++</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="skill-img">
+                <img src="logos/python.svg" alt="" class="skill-icon" />
+              </div>
+              <h3>Python</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Frameworks</h2>
+      <div class="skill-container">
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="logos/nodejs.jpg" class="skill-icon" alt="" />
+            </div>
+            <h3>Node JS</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-container">
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="logos/react.png" class="skill-icon" alt="" />
+            </div>
+            <h3>React JS</h3>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>

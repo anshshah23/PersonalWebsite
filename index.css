@@ -1,208 +1,294 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
-    list-style-type: none;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large;
+  list-style: none;
 }
-html{
-    scroll-behavior: inherit;
+html {
+  scroll-behavior: inherit;
 }
 
-body{
-    background-color: rgb(5, 9, 69);
-    align-items: center;
+body {
+  background-color: rgb(5, 9, 69);
+  align-items: center;
 }
 
 /* Navbar */
-#myimg{
-    width: 5%;
-    height: 6%;
-    size: 30%;
-    position: fixed;
-    margin-top: auto;
+#myimg {
+  width: 5%;
+  height: 6%;
+  size: 35%;
+  position: fixed;
+  margin-top: auto;
 }
 .container {
-    display: flex;
-    width: 100vw;
-    justify-content: space-between;
-    padding: 0 15px;
-    align-items: center;
-  }
-  
-  .navbar ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-    width: 50vw;
-    align-items: center;
-    padding: 15px;
-    margin-left: -50px;
-    font-style: bold;
-    font-weight: bolder;
-  }
-  
-  .navbar li a {
-    text-decoration: none;
-    color: rgb(255, 241, 206);
-    font-size: 1.4em;
-    transition: 200ms;
-    padding: 2px 20px;
-    transition: 200ms;
-  }
-  
-  .navbar li a:hover {
-    background-color: rgb(147, 215, 254);
-    box-shadow: 0 0 5px rgb(255, 255, 255);
-    border: none;
-    color: rgb(5, 9, 69);
-    
-    
-    /* Expand the bottom border on hover */
-    .navbar a:hover::after {
-        width: 100%;
-        left: 0;
-    }
-  }
-  .navbar a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: white;
-    transition: width 0.3s ease-in-out; /* Animation duration and easing function */
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 0 2%;
+  align-items: center;
 }
-  
-.homenav{
-    position: center;
+
+.navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  width: 50vw;
+  align-items: center;
+  padding: 20px;
+  margin-left: -50px;
+  font-style: bold;
+  font-weight: bolder;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: rgb(255, 241, 206);
+  font-size: 1.4em;
+  transition: 200ms;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.navbar li a:hover {
+  border: none;
+  color: rgb(255, 116, 116);
+  text-decoration-line: underline;
+  transition: width 1s ease-in-out;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: rgb(255, 124, 124);
+  transition: width 0.3s ease-in-out; /* Animation duration and easing function */
+}
+
+.homenav {
+  position: center;
 }
 
 .bg img {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: -50;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -50;
 }
 
 /* glitch effect */
 .glitch {
-    margin-left: 5%;
-    letter-spacing: 0.3%;
-    cursor: none;
-    position:sticky;
-    color: azure;
-    font-size: 250%;
-    font-family:'Pacifico', 'Arial Narrow' monospace;
+  margin-left: 5%;
+  letter-spacing: 0.3%;
+  cursor: none;
+  position:relative;
+  color: rgb(211, 235, 235);
+  font-size: 250%;
+  font-family: "Pacifico", "Arial Narrow" monospace;
 }
-  .glitch::before,
-  .glitch::after {
-    content: "Ansh Shah!";
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-  
-  .glitch::before {
-    animation: glitch 3s linear infinite;
-    color: #e91e6292;
-    z-index: 0;
-  }
-  .glitch::after {
-    animation: glitch 3s linear infinite reverse;
-    color: #00c8ff70;
-    z-index: 0;
-  }
-  
-  @keyframes glitch {
-    0% {
-      top: 0;
-      left: 0;
-    }
-    20% {
-      top: -5px;
-      left: -5px;
-    }
-    40% {
-      top: 5px;
-      left: 5px;
-    }
-    60% {
-      top: -5px;
-      left: 5px;
-    }
-    80% {
-      top: 5px;
-      left: -5px;
-    }
-    100% {
-      top: 0;
-      left: 0;
-    }
-  }
+.glitch::before,
+.glitch::after {
+  content: "Ansh Shah!";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 
-  /* Typing animation*/
-  .container-anim {
-    display: flex;
-    width: 100vw;
-    justify-content: flex-start;
-    padding: 0 15px;
-    align-items: center;
+.glitch::before {
+  animation: glitch 3s linear infinite;
+  color: #e91e6292;
+  z-index: 0;
+}
+.glitch::after {
+  animation: glitch 3s linear infinite reverse;
+  color: #00c8ff70;
+  z-index: 0;
+}
+
+@keyframes glitch {
+  0% {
+    top: 0;
+    left: 0;
   }
-  
- 
+  20% {
+    top: -5px;
+    left: -5px;
+  }
+  40% {
+    top: 5px;
+    left: 5px;
+  }
+  60% {
+    top: -5px;
+    left: 5px;
+  }
+  80% {
+    top: 5px;
+    left: -5px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Typing animation*/
+.container-anim {
+  display: flex;
+  width: 100vw;
+  justify-content: flex-start;
+  padding: 0 15px;
+  align-items: center;
+}
+
 .photo {
-    margin-right: 10%;
+  margin-right: 10%;
 }
 
 img {
-    margin-left: 40%;
-    max-width: 80%;
-    height: auto;
+  margin-left: 40%;
+  max-width: 80%;
+  height: auto;
 }
 
 .typing-container {
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    white-space: nowrap;
-    color: antiquewhite;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  white-space: nowrap;
+  color: antiquewhite;
 }
 
 #cursor {
-    border-left: 2px solid #000;
-    animation: blink 0.7s infinite;
-    margin-left: 0%;
+  border-left: 2px solid #000;
+  animation: blink 0.9s infinite;
+  margin-left: 0%;
 }
 
 @keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/*Skills Section*/
+.skill-inner{
+  padding-top: 20px;
+}
+
+.skill-header{
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  position: center;
+}
+h2{
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+.skill-header:after{
+  content: '';
+  align-items: center;
+  bottom: 0;
+  left: 50%;
+  transform:  translate(-50%);
+  height: 4px;
+  width: 2%;
+  background-color: #2ecc71;
+}
+
+.row{
+  display: flex;
+  height: 33%;
+  align-items: center;
+}
+.skill-container{
+  flex-basis: 33%;
+  display: inline-block;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  grid-gap: 0;
+  padding: 1rem 10%;
+  font-size: 2rem;
+  margin-left: 2%;
+}
+
+.skill-box{
+  padding: 1rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.skill-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skill-title h3{
+  color: #fff;
+  margin: 0.5rem;
+}
+.skill-img{
+  width: 90px;
+  position:relative;
+  height: 90px;
+  border-radius: 45px;
+  background-color: #fff;
+  justify-items: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skill-img::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+}
+.skill-icon{
+  width: 50px;
+  z-index: 2;
 }
 /*Unused right now*/
-  .btntop {
-    position: relative;
-    cursor: pointer;
-    border: none;
-    border-radius: 50px;
-    font-size: 1em;
-    top: 150px;
-    padding: 4px 10px;
-    box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan;
-    background-color: cyan;
-  }
-  
-  .btntop a {
-    text-decoration: none;
-    color: black;
-  }
+.btntop {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  font-size: 1em;
+  top: 150px;
+  padding: 4px 10px;
+  box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan;
+  background-color: cyan;
+}
+
+.btntop a {
+  text-decoration: none;
+  color: black;
+}
