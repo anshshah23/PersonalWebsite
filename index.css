@@ -56,9 +56,9 @@ body {
 .navbar li a {
   text-decoration: none;
   color: rgb(255, 241, 206);
-  font-size: 1.4em;
+  font-size: 1.8em;
   transition: 200ms;
-  padding: 0.2vw;
+  padding: 1.4vw;
   transition: 0.3s;
 }
 
@@ -299,4 +299,32 @@ h2{
 .btntop a {
   text-decoration: none;
   color: black;
+}
+
+/* Contact Form*/
+#contact{
+    justify-content: space-around;
+    position: relative;
+}
+.contact-body{
+    background-color: rgb(9,12,54);
+    color: bisque;
+}
+.contact-h1{
+    align-content: center;
+    padding-top: 4%;
+    margin: 5%;
+    margin-bottom: 0%;
+}
+.contact-form{
+    border-style: solid;
+    border-radius: 1mm;
+    align-items: center;
+    color: bisque;
+    background-color: rgb(9, 12, 54);
+    justify-content: space-between;
+    padding-left: 1cm;
+    padding: 2%;
+    margin: 5%;
+    margin-top: 0%;
 }
