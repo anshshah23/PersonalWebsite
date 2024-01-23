@@ -13,7 +13,7 @@
           <div id="hometitle">
             <h6 class="glitch">Ansh Shah</h6>
           </div>
-          <ul>
+          <ul class="login-navigation">
             <li id="home"><a href="#nav">Home</a></li>
             <li id="home"><a href="#profile">Profile</a></li>
             <li id="home"><a href="#skill">Skills</a></li>
@@ -26,26 +26,28 @@
 
     <section class="profile" id="profile">
       <div class="container-anim">
-        <div class="photo" style="border: 3%; padding-top: 5%">
-          <img src="profile.png" alt="Your Photo" />
-        </div>
-        <div class="typing-container">
-          <p id="text" style="font-size: 120%; padding-top: 20%">
-            Welcome to my world of frontend web development!
-          </p>
-          <p style="font-size: 120%; padding: 2%">
-            I'm Ansh Shah, a dedicated developer passionate
-            <br />about blending creativity with functionality. From
-            <br />responsive layouts to engaging user interfaces, <br />each
-            project reflects my commitment to delivering <br />captivating
-            digital experiences.
-            <br />
-            <br />Join me in crafting websites that not only meet
-            <br />functional needs but also leave a lasting impression.
-            <br />Let's build a web presence that tells a compelling <br />story
-            with every click and scroll.
-          </p>
-          <span id="cursor"></span>
+        <div class="row">
+          <div class="photo" style="border: 3%; padding-top: 5%">
+            <img src="profile.png" alt="Your Photo" />
+          </div>
+          <div class="typing-container">
+            <p id="text" style="font-size: 120%; padding-top: 20%">
+              Welcome to my world of frontend web development!
+            </p>
+            <p style="font-size: 120%; padding: 2%">
+              I'm Ansh Shah, a dedicated developer passionate
+              <br />about blending creativity with functionality. From
+              <br />responsive layouts to engaging user interfaces, <br />each
+              project reflects my commitment to delivering <br />captivating
+              digital experiences.
+              <br />
+              <br />Join me in crafting websites that not only meet
+              <br />functional needs but also leave a lasting impression.
+              <br />Let's build a web presence that tells a compelling
+              <br />story with every click and scroll.
+            </p>
+            <span id="cursor"></span>
+          </div>
         </div>
       </div>
       <script src="script.js"></script>
@@ -174,22 +176,27 @@
 
     <section id="contact">
       <div class="contact-body">
-      <div class="contact-main">
-        <h1 class="contact-h1">Get in touch with me!</h1>
+        <div class="contact-main">
+          <h1 class="contact-h1">Get in touch with me!</h1>
 
-        <div class="contact-form">
-          <form action="">
-            <p>Name: <input type="text" required /></p>
-            <p>
-              Email:
-              <input type="email" name="sendername" id="senderemail" required />
-            </p>
-            <p>Date: <input type="date" name="date" id="date" required /></p>
-            <input type="submit" title="Submit" />
-          </form>
+          <div class="contact-form">
+            <form action="">
+              <p>Name: <input type="text" required /></p>
+              <p>
+                Email:
+                <input
+                  type="email"
+                  name="sendername"
+                  id="senderemail"
+                  required
+                />
+              </p>
+              <p>Date: <input type="date" name="date" id="date" required /></p>
+              <input type="submit" title="Submit" />
+            </form>
+          </div>
         </div>
       </div>
-    </div>
     </section>
   </body>
 </html>
