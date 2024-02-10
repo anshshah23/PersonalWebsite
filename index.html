@@ -17,7 +17,7 @@
             <li id="home"><a href="#nav">Home</a></li>
             <li id="home"><a href="#profile">Profile</a></li>
             <li id="home"><a href="#skill">Skills</a></li>
-            <li id="home"><a href="#projects">Projects</a></li>
+            <li id="home"><a href="#project">Projects</a></li>
             <li id="home"><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -28,7 +28,7 @@
       <div class="container-anim">
         <div class="row">
           <div class="photo" style="border: 3%; padding-top: 5%">
-            <img src="profile.png" alt="Your Photo" />
+            <img src="profile.jpg" alt="Your Photo" />
           </div>
           <div class="typing-container">
             <p id="text" style="font-size: 120%; padding-top: 20%">
@@ -172,14 +172,78 @@
     </section>
     <section id="project">
       <div class="project-myws">
-        <h1 class="sub-header">My Projects</h1>
+        <h1 class="skill-header"><p>My Projects</p></h1>
+      </div>
+      <div class="main-container"></div>
+      <div class="projects-container">
+        <div class="project" id="weather-app">
+          <img src="weather-app-screenshot.jpg" alt="Weather App Screenshot" />
+          <div class="project-details">
+            <h3>Weather App</h3>
+            <p>
+              A dynamic weather application that provides real-time weather
+              information using external APIs. <br />-> Displays current weather
+              conditions <br />-> Provides hourly and daily forecasts
+              <br />->Supports location-based weather updates
+              <br />->Customizable settings for temperature units <br />Built
+              with HTML, CSS, JavaScript, and integrates with APIs such as
+              OpenWeatherMap.
+            </p>
+            <a href="#" class="btn">Visit Website</a>
+          </div>
+        </div>
+        <div class="project" id="restaurant-booking-app">
+          <img
+            src="restaurant-booking-screenshot.jpg"
+            alt="Restaurant Booking App Screenshot"
+          />
+          <div class="project-details">
+            <h3>Restaurant Booking App</h3>
+            <p>
+              An interactive app allowing users to book tables at restaurants
+              with real-time availability tracking.<br />
+              -> Search and browse nearby restaurants.<br />
+              -> View restaurant details, menus, and reviews.<br />
+              -> Book tables with real-time availability updates.<br />
+              -> Integrated notification system for booking confirmations.
+            </p>
+            <p>
+              Built with React.js for frontend and Node.js for backend, with
+              integration to restaurant reservation APIs.
+            </p>
+            <a href="#" class="btn">Visit Website</a>
+          </div>
+        </div>
+
+        <div class="project" id="food-delivery-mock-app">
+          <img
+            src="food-delivery-screenshot.jpg"
+            alt="Food Delivery Mock App Screenshot"
+          />
+          <div class="project-details">
+            <h3>Food Delivery Mock App</h3>
+            <p>
+              A simulated food delivery app showcasing order placement,
+              tracking, and delivery status updates.<br />
+              -> Browse restaurants and menus.<br />
+              -> Place orders with customized preferences.<br />
+              -> Track orders in real-time.<br />
+              -> Receive notifications for order status updates.
+            </p>
+            <p>
+              Developed with Vue.js for frontend and Firebase for backend,
+              integrating with mock APIs for order management.
+            </p>
+            <a href="#" class="btn">Visit Website</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="contact-body">
         <div class="contact-main">
-          <h1 class="sub-header">Get in touch with me!</h1>
+          <div class="skill-header"><p>Get in touch with me!</p></div>
 
           <div class="contact-form">
             <form action="">
