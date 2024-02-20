@@ -445,6 +445,7 @@ h2{
   }
   .projects-container{
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -521,8 +522,4 @@ h2{
 }
 .contact-form p{
   padding: 1%;
-}
-
-@media body{
-
 }
