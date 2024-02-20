@@ -255,6 +255,7 @@ h2{
 
 @media (max-width:400px) {
   .skill-container{
+    margin-left: auto;
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
@@ -263,6 +264,7 @@ h2{
     overflow-x: hidden;
   }  
   .container{
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,6 +272,7 @@ h2{
     overflow-x: hidden;
   }
   .navbar ul{
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,6 +280,7 @@ h2{
     overflow-x: hidden;
   }
   .typing-container{
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,6 +288,7 @@ h2{
     max-width: 300px;
   }
   .row{
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
