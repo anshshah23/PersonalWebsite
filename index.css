@@ -253,7 +253,7 @@ h2{
   margin-left: 2%;
 }
 
-@media (max-width:500px) {
+@media (max-width:400px) {
   .skill-container{
     flex-basis: 100%;
     display: flex;
