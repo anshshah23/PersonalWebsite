@@ -269,7 +269,7 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    overflow-x: auto;
   }
   .navbar ul{
     margin-left: auto;
@@ -277,7 +277,7 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    overflow-x: auto;
   }
   .typing-container{
     margin-left: auto;
@@ -293,7 +293,7 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow:auto;
   }
   #profile{
     display: flex;
