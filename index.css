@@ -26,7 +26,7 @@ body {
 #myimg {
   width: 5%;
   height: 6%;
-  size: 30%;
+  size: 20%;
   position: fixed;
   margin-top: auto;
 }
@@ -41,6 +41,7 @@ body {
 .navbar{
   height: 12%;
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: center;
 }
@@ -87,7 +88,7 @@ body {
 }
 
 .homenav {
-  position: center;
+  position: sticky;
 }
 
 .bg img {
@@ -176,7 +177,7 @@ body {
 }
 
 img {
-  max-width: 80%;
+  max-width: 60%;
   height: auto;
 }
 
@@ -253,7 +254,17 @@ h2{
   margin-left: 2%;
 }
 
-@media (max-width:300px) {
+@media (max-width:450px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    size: 90vh;
+  }
+  .homenav {
+    position: center;
+  }
   .skill-container{
     margin-left: auto;
     flex-basis: 100%;
@@ -285,7 +296,7 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 300px;
+    max-width: 10vw;
   }
   .row{
     margin-left: auto;
@@ -293,9 +304,10 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow:auto;
+    overflow:hidden;
   }
   #profile{
+    padding-block: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -406,10 +418,11 @@ h2{
 
 /* Style the project images */
 .project img {
-  width: 100%;
+  width: 120%;
   height: auto;
   border-radius: 10px 10px 0 0;
   color: #ccc;
+  margin: auto;
 }
 
 /* Style the project titles */
@@ -439,7 +452,7 @@ h2{
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 430px) {
   .project {
     width: calc(100% - 40px);
   }
@@ -496,8 +509,10 @@ h2{
 
 /* Contact Form*/
 #contact{
+  height: 100vb;
     justify-content: space-around;
     position: relative;
+    z-index: -100;
 }
 .contact-body{
     background-color: rgb(9,12,54);
