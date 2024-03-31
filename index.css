@@ -553,3 +553,38 @@ h2{
 .contact-form p{
   padding: 1%;
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the nav links by default */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 80px; /* Adjust as needed based on your navbar height */
+    background-color: #333; /* Background color for the menu */
+    z-index: 1;
+  }
+
+  .nav-links li {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon */
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 430px) {
+  .menu-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+}
