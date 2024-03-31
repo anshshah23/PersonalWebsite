@@ -563,7 +563,7 @@ h2{
 }
 
 .navbar {
-  background-color: #333;
+  background-color: rgb(5, 9, 69);
   color: #fff;
   padding: 10px 0;
 }
@@ -583,7 +583,7 @@ h2{
   display: block;
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: rgb(255, 102, 102);
   margin: 5px;
   transition: transform 0.4s;
 }
@@ -637,5 +637,17 @@ h2{
 
   .menu-icon.active span:last-child {
     transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li:not(:first-child) {
+    display: none;
+  }
+
+  .nav-links.active li {
+    display: block;
   }
 }
