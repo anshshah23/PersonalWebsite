@@ -554,37 +554,87 @@ h2{
   padding: 1%;
 }
 
+/* Default styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: transform 0.4s;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
 @media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
   .nav-links {
-    display: none; /* Hide the nav links by default */
+    display: none;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    background-color: #333;
     position: absolute;
-    top: 80px; /* Adjust as needed based on your navbar height */
-    background-color: #333; /* Background color for the menu */
-    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 100%;
   }
 
   .nav-links li {
-    padding: 10px;
-    width: 100%;
+    margin: 0;
     text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
   }
 
-  .menu-icon {
-    display: block; /* Show the menu icon */
-    cursor: pointer;
-    color: #fff;
+  .nav-links li:last-child {
+    border-bottom: none;
   }
-}
 
-/* Media query for mobile devices */
-@media (max-width: 430px) {
-  .menu-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 2;
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon.active span:first-child {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-icon.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.active span:last-child {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 }
