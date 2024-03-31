@@ -85,582 +85,118 @@ body {
 
 .navbar li a:hover::after {
   transform-origin: left;
-  transform: scaleX(1);;
-}
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css');
 
-.homenav {
-  position: sticky;
-}
+  /* Your existing code here */
 
-.bg img {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: -20;
-}
-
-/* glitch effect */
-.glitch {
-  margin-right: 40%;
-  margin-left: 5%;
-  letter-spacing: 0.3%;
-  cursor: none;
-  position:relative;
-  color: rgb(211, 235, 235);
-  font-size: 250%;
-  font-family: "Pacifico", "Arial Narrow" monospace;
-}
-.glitch::before,
-.glitch::after {
-  content: "Ansh Shah!";
-  display: inline-block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.glitch::before {
-  animation: glitch 3s linear infinite;
-  color: #e91e6292;
-  z-index: 0;
-}
-.glitch::after {
-  animation: glitch 3s linear infinite reverse;
-  color: #00c8ff70;
-  z-index: 0;
-}
-
-@keyframes glitch {
-  0% {
-    top: 0;
-    left: 0;
-  }
-  20% {
-    top: -5px;
-    left: -5px;
-  }
-  40% {
-    top: 5px;
-    left: 5px;
-  }
-  60% {
-    top: -5px;
-    left: 5px;
-  }
-  80% {
-    top: 5px;
-    left: -5px;
-  }
-  100% {
-    top: 0;
-    left: 0;
-  }
-}
-
-/* Typing animation*/
-#profile{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.container-anim {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  padding: 0 15px;
-  align-items: center;
-}
-
-.photo {
-  margin-right: 1%;
-}
-
-img {
-  max-width: 60%;
-  height: auto;
-}
-
-.typing-container {
-  font-family: "Arial", sans-serif;
-  font-size: 24px;
-  white-space: nowrap;
-  color: antiquewhite;
-}
-
-#cursor {
-  border-left: 2px solid #000;
-  animation: blink 0.7s infinite;
-  margin-left: 0%;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-/*Skills Section*/
-.skill-inner{
-  padding-top: 2px;
-}
-
-.skill-header{
-  text-align: center;
-  color: #fff;
-  padding: 2rem;
-  position: center;
-}
-.skill-header p{
-  font-size: 3rem;
-}
-h2{
-  text-align: center;
-  color: #fff;
-  padding: 1rem;
-  position: relative;
-  font-size: 2rem;
-}
-.skill-header:after{
-  content: '';
-  align-items: center;
-  bottom: 0;
-  left: 50%;
-  transform:  translate(-50%);
-  height: 40px;
-  width: 10%;
-  background-color: #2ecc71;
-}
-
-.row{
-  height: 33%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.skill-container{
-  flex-basis: 33%;
-  display: inline-block;
-  justify-content: center;
-  align-items:center;
-  text-align: center;
-  grid-gap: 0;
-  padding: 1rem 10%;
-  font-size: 2rem;
-  margin-left: 2%;
-}
-@media (max-width: 768px) {
-  .skill-container {
-    margin-left: 0;
-    padding: 1rem 5%; /* Adjust padding for smaller screens */
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-  }
-}
-
-/* Media query for mobile devices */
-@media (max-width: 430px) {
-  .skill-container {
-    padding: 1rem 2%; /* Further adjust padding for smaller screens */
-    font-size: 1.2rem; /* Further adjust font size for smaller screens */
-  }
-}
-@media (max-width:450px) {
-  .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    size: 90vh;
-  }
-  .homenav {
-    position: center;
-  }
-  .skill-container{
-    margin-left: auto;
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
-  }  
-  .container{
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow-x: auto;
-  }
-  .navbar ul{
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow-x: auto;
-  }
-  .typing-container{
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 10vw;
-  }
-  .row{
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow:hidden;
-  }
-  #profile{
-    padding-block: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  img{
-    size: 20%;
-  }
-}
-
-.skill-box{
-  padding: 1rem;
-  color: #ddd;
-  cursor: pointer;
-}
-
-.skill-title{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.skill-title h3{
-  color: #fff;
-  margin: 0.5rem;
-}
-.skill-img{
-  width: 160px;
-  position:sticky;
-  height: 160px;
-  border-radius: 80px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skill-img::after{
-  content: '';
-  position: absolute;
-  margin-right: -5;
-  width: 50%;
-  height: 50%;
-}
-.skill-icon{
-  width: 80px;
-  z-index: 0;
-}
-
-/* Container for all projects */
-#project{
-  height:auto ;
-}
-.main-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.projects-container {
-  display:flex;
-  justify-content: center;
-  align-items: center; 
-  margin-left: auto;
-  margin-right: auto;
-} 
-/* Style the project details */
-.project-details {
-  padding: 20px;
-  flex-grow: 1;
-}
-
-/* Style the features list */
-.project-details ul {
-  margin-top: 10px;
-  margin-bottom: 15px;
-}
-
-/* Style the link button */
-.btn {
-  align-items: center;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-
-/* Apply styles to the project container */
-.project {
-  width: calc(33.33% - 40px); /* Adjust as needed */
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
-}
-
-/* Style the project images */
-.project img {
-  width: 120%;
-  height: auto;
-  border-radius: 10px 10px 0 0;
-  color: #ccc;
-  margin: auto;
-}
-
-/* Style the project titles */
-.project h3 {
-  margin-top: 10px;
-  font-size: 1.2em;
-  color: #bdfcff;
-}
-
-/* Style the project descriptions */
-.project p {
-  margin-top: 5px;
-  font-size: 1em;
-  color: #a1a1a1;
-}
-
-/* Hover effect */
-.project:hover {
-  transform: translateY(-5px); /* Move project up slightly */
-  box-shadow: 1px 3px 5px #ffffffad; /* Increase shadow on hover */
-}
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-  .project {
-    width: calc(50% - 40px); /* Adjust as needed */
-  }
-}
-
-@media (max-width: 430px) {
-  .project {
-    width: calc(100% - 40px);
-  }
-  .projects-container{
-    flex-basis: 100%;
-    display: inline-flex;
-    max-width: min-content;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.visit{
-  padding-top: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* Fade-in animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Apply fade-in animation to project details */
-.project-details.fade-in {
-  animation: fadeIn 0.5s ease forwards;
-}
-
-/*Unused right now*/
-.btntop {
-  position: relative;
-  cursor: pointer;
-  border: none;
-  border-radius: 50px;
-  font-size: 1em;
-  top: 150px;
-  padding: 4px 10px;
-  box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan;
-  background-color: cyan;
-}
-
-.btntop a {
-  text-decoration: none;
-  color: black;
-}
-
-/* Contact Form*/
-#contact{
-  height: 100vb;
-    justify-content: space-around;
-    position: relative;
-    z-index: -100;
-}
-.contact-body{
-    background-color: rgb(9,12,54);
-    color: bisque;
-}
-.skill-header{
-    align-content: center;
-    padding-top: 4%;
-    margin: 5%;
-    margin-bottom: 0%;
-}
-.contact-form{
-    border-style: solid;
-    border-radius: 1mm;
-    align-items: center;
-    color: bisque;
-    background-color: rgb(9, 12, 54);
-    justify-content: space-between;
-    padding-left: 1cm;
-    padding: 2%;
-    margin: 5%;
-    margin-top: 0%;
-}
-.contact-form p{
-  padding: 1%;
-}
-
-/* Default styles */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.navbar {
-  background-color: rgb(5, 9, 69);
-  color: #fff;
-  padding: 10px 0;
-}
-@media screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
+  /* Add responsive classes using Tailwind CSS */
+  @media (max-width: 768px) {
+    .skill-container {
+      margin-left: 0;
+      padding: 1rem 5%; /* Adjust padding for smaller screens */
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
   }
 
-  .nav-links {
-    display: none;
+  @media (max-width: 430px) {
+    .skill-container {
+      padding: 1rem 2%; /* Further adjust padding for smaller screens */
+      font-size: 1.2rem; /* Further adjust font size for smaller screens */
+    }
   }
 
-  .menu-icon span {
-    background-color: #fff;
-  }
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
-.menu-icon span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: rgb(255, 102, 102);
-  margin: 5px;
-  transition: transform 0.4s;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-}
-
-.nav-links li {
-  margin-right: 20px;
-}
-
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-  }
-
-  .nav-links li {
-    margin: 0;
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #555;
-  }
-
-  .nav-links li:last-child {
-    border-bottom: none;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .menu-icon.active span:first-child {
-    transform: rotate(-45deg) translate(-5px, 6px);
+  @media (max-width: 450px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      size: 90vh;
+    }
+    .homenav {
+      position: center;
+    }
+    .skill-container {
+      margin-left: auto;
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+    .container {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: auto;
+    }
+    .navbar ul {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: auto;
+    }
+    .typing-container {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 10vw;
+    }
+    .row {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    #profile {
+      padding-block: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      size: 20%;
+    }
   }
 
-  .menu-icon.active span:nth-child(2) {
-    opacity: 0;
+  /* Add responsive classes using Tailwind CSS */
+  @media (max-width: 768px) {
+    .project {
+      width: calc(50% - 40px); /* Adjust as needed */
+    }
   }
 
-  .menu-icon.active span:last-child {
-    transform: rotate(45deg) translate(-5px, -6px);
+  @media (max-width: 430px) {
+    .project {
+      width: calc(100% - 40px);
+    }
+    .projects-container {
+      flex-basis: 100%;
+      display: inline-flex;
+      max-width: min-content;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
-  .nav-links.active {
-    display: flex;
-  }
+  /* Add responsive classes using Tailwind CSS */
+  @media (max-width: 768px) {
+    .nav-links li:not(:first-child) {
+      display: none;
+    }
 
-  .nav-links li:not(:first-child) {
-    display: none;
+    .nav-links.active li {
+      display: block;
+    }
   }
-
-  .nav-links.active li {
-    display: block;
-  }
-}
