@@ -18,10 +18,9 @@ window.addEventListener("scroll",()=>{
 
 })
 
-$(document).ready(function(){
-  $('.menu-icon').click(function(){
-    $('.nav-links').slideToggle(400);
-  });
+document.querySelector('.menu-icon').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('.nav-links').classList.toggle('active');
 });
 
 // Wait for the content to load
