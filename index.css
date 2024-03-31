@@ -567,6 +567,19 @@ h2{
   color: #fff;
   padding: 10px 0;
 }
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon span {
+    background-color: #fff;
+  }
+}
 
 .container {
   display: flex;

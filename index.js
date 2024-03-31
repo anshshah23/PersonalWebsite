@@ -19,9 +19,9 @@ window.addEventListener("scroll",()=>{
 })
 
 document.querySelector('.menu-icon').addEventListener('click', function() {
-  this.classList.toggle('active');
-  document.querySelector('.nav-links').classList.toggle('active');
-});
+    this.classList.toggle('active');
+    document.querySelector('.nav-links').classList.toggle('active');
+  });  
 
 // Wait for the content to load
 window.addEventListener('DOMContentLoaded', (event) => {
