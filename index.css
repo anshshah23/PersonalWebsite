@@ -253,7 +253,21 @@ h2{
   font-size: 2rem;
   margin-left: 2%;
 }
+@media (max-width: 768px) {
+  .skill-container {
+    margin-left: 0;
+    padding: 1rem 5%; /* Adjust padding for smaller screens */
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
 
+/* Media query for mobile devices */
+@media (max-width: 430px) {
+  .skill-container {
+    padding: 1rem 2%; /* Further adjust padding for smaller screens */
+    font-size: 1.2rem; /* Further adjust font size for smaller screens */
+  }
+}
 @media (max-width:450px) {
   .container{
     display: flex;
