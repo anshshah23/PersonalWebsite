@@ -18,6 +18,12 @@ window.addEventListener("scroll",()=>{
 
 })
 
+$(document).ready(function(){
+  $('.menu-icon').click(function(){
+    $('.nav-links').slideToggle(400);
+  });
+});
+
 // Wait for the content to load
 window.addEventListener('DOMContentLoaded', (event) => {
     // Get all project elements
